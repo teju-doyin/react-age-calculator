@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:  hsl(0, 0%, 94%);
+}
+img{
+  width: 70%;
+  max-width: 100%;
+}
+.body-container{
+  background-color:  hsl(0, 0%, 100%);
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-end-end-radius: 5rem;
+  max-width: 350px;
+}
+form{
+  display: flex;
+  gap: 1rem;
+  max-width: 80%;
+}
+.user-input{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+label{
+  margin-bottom: 5px;
+  color:  hsl(0, 1%, 44%);
+  font-weight: 700;
+  font-size: .6rem;
+  letter-spacing: 1px;
+}
+input{
+  height: 1.8rem;
+  padding-left: .5rem;
+  border: 1px solid  hsl(0, 1%, 44%);
+  border-radius: 5px;
+  font: 1em sans-serif;
+  font-weight: 700;
+  /* cursor: pointer; */
+}
+input:hover{
+  /* border: none; */
+  /* background-color: red; */
+  transition: ease-in 100ms;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+input[type="number"]:focus  {
+  border-color: red !important;
+}
+
+/* Remove arrows from number input */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Optional: Remove margin */
+}
+
+::placeholder{
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: .9rem;
+  color:  hsl(0, 1%, 44%);
+}
+.error-msg{
+  color: hsl(0, 100%, 67%);
+  font-size: .5rem;
+  margin-top: 5px;
+  
+  /* display: none; */
+}
+.red{
+  color:  hsl(0, 100%, 67%);
+}
+.submit-section{
+  background-color: hsl(0, 0%, 86%);
+  height: 1px;
+  position: relative;
+  margin-top: 1.5rem;
+}
+button{
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  padding: .5rem;
+  right: 0;
+  /* top: 0; */
+  bottom: -25px;
+  background-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+button:hover{
+  /* transition-delay: 4ms; */
+  transition: ease-in 150ms;
+  background-color: hsl(0, 0%, 8%);
+}
+
+/* age result section */
+.age-container{
+  margin-top: 2rem;
+}
+h1{
+  margin: 0;
+  color: hsl(0, 0%, 8%);
+  font-weight: bolder;
+  font-size: 2.5rem;
+
+}
+span{
+  color: hsl(259, 100%, 65%);
+}
+/* Example of a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* CSS rules for smaller screens */
+  .body-container{
+    /* background-color: red; */
+  }
+  .submit-section{
+    margin-top: 3.5rem;
+  }
+  form{
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  button{
+    /* top: ; */
+    left: 9.5rem;
+    right: 9rem;
+    /* align-items: center; */
+    /* display: block !important; */
+  }
+}
